@@ -17,7 +17,10 @@ export default function About() {
 				</div>
 				<div className='relative top-20 left-20 grid grid-cols-2 flex justify-center justify-items-center'>
 					<div className='w-3/4'>
-						<img src={Chip} />
+						<img
+							src={Chip}
+							alt='ai_chip'
+						/>
 					</div>
 					<div className='w-[60rem] flex flex-col justify-center align-items-center'>
 						<div className='text-xl max-w-lg font-plexlight tracking-widest text-left'>
