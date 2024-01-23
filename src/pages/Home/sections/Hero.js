@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<section
 			style={{ backgroundImage: `url(${HeroBgImage})` }}
-			className='relative h-screen text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top'
+			className=' h-screen w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top'
 		>
 			<div className='relative top-60 flex flex-row '>
 				<div className='lg:basis-1/2'></div>

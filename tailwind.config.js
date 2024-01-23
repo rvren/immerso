@@ -11,14 +11,19 @@ module.exports = withMT({
 			iviolet: "#9600FF",
 			igreen: "#00D3A9",
 			igrey: "#E5E5E5",
+			ibodygrey: "#C7C5C5",
 		},
 		extend: {
 			fontFamily: {
 				plexbold: "PlexMonoBold",
 				plexmedium: "PlexMonoMedium",
 				plexlight: "PlexMonoLight",
-				manropebold: "ManropeBold",
 				manropemedium: "ManropeMedium",
+				manropebold: "ManropeBold",
+				manropeextrabold: "ManropeExtraBold",
+			},
+			backgroundImage: {
+				"gradient-green": "linear-gradient(145deg, var(--tw-gradient-stops))",
 			},
 		},
 	},

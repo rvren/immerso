@@ -5,7 +5,7 @@ export default function Button({ variant = "gradient", text, callBack }) {
 		<TailButton
 			variant={variant}
 			onClick={callBack}
-			className='bg-gradient-to-l from-iviolet to-igreen rounded-none normal-case text-1xl font-manropemedium '
+			className='bg-gradient-to-l from-iviolet to-igreen rounded-none normal-case text-1xl font-manropemedium max-w-max mt-8'
 		>
 			{text}
 		</TailButton>
