@@ -1,6 +1,5 @@
 import React from "react";
 import BgImage from "../../../assets/images/product/bg.png";
-import Button from "../../../components/Button";
 
 export default function About() {
 	return (

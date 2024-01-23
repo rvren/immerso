@@ -66,7 +66,7 @@ function NavListMenu() {
 	const renderItems = navListMenuItems.map(
 		({ icon, title, description }, key) => (
 			<a
-				href='#'
+				href={title}
 				key={key}
 			>
 				<MenuItem className='flex items-center gap-3 rounded-lg'>
@@ -150,7 +150,7 @@ function NavList() {
 		<List className='mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1'>
 			<Typography
 				as='a'
-				href='#'
+				href='/'
 				variant='small'
 				className='font-medium'
 			>
@@ -162,7 +162,7 @@ function NavList() {
 			<NavListMenu />
 			<Typography
 				as='a'
-				href='#'
+				href='/about'
 				variant='small'
 				className='font-medium'
 			>
@@ -172,7 +172,7 @@ function NavList() {
 			</Typography>
 			<Typography
 				as='a'
-				href='#'
+				href='/blog'
 				variant='small'
 				className='font-medium'
 			>
@@ -182,7 +182,7 @@ function NavList() {
 			</Typography>
 			<Typography
 				as='a'
-				href='#'
+				href='connect'
 				variant='small'
 				className='font-medium'
 			>
@@ -218,7 +218,7 @@ export function MegaMenuWithHover() {
 			<div className='flex items-center justify-around '>
 				<Typography
 					as='a'
-					href='#'
+					href='/'
 					variant='h6'
 					className='mr-4 cursor-pointer py-1.5 lg:ml-2'
 				>
