@@ -1,0 +1,27 @@
+<svg width="1260" height="1228" viewBox="0 0 1260 1228" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H1260V1148C1260 1192.18 1224.18 1228 1180 1228H80C35.8172 1228 0 1192.18 0 1148V0Z" fill="url(#paint0_linear_991_6482)" fill-opacity="0.3"/>
+<g opacity="0.1">
+<path d="M161 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M224 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M224 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M224 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M297 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M370 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M443 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M516 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M589 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M662 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M735 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M808 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M881 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M954 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M1027 0V1228" stroke="#1479FF" stroke-width="3"/>
+<path d="M1100 0V1228" stroke="#1479FF" stroke-width="3"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_991_6482" x1="630" y1="0" x2="630" y2="1228" gradientUnits="userSpaceOnUse">
+<stop stop-color="#017972"/>
+<stop offset="1" stop-color="#03958C" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

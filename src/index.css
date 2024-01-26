@@ -54,3 +54,42 @@ body {
 .bg-scroll{
   background: rgba(3, 0, 19, 0.10);
 }
+
+.bg-menu{
+  background: rgba(3, 0, 19, 0.50);
+}
+
+.swiper-button-next,
+          .swiper-button-prev {
+            color: #FFFFFF !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 2.5rem;
+            font-size: 0.5rem;
+            border-radius: 100%;
+            z-index: 10;
+          }
+
+.swiper-button-prev {
+  background-image: url("./assets/images/ellipse.svg");
+}
+
+.swiper-button-next {
+  background-image: url("./assets/images/ellipse.svg");
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
