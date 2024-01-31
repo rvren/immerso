@@ -21,22 +21,25 @@ export default function Blog() {
 	const isVisible = useIsVisible(refBlog);
 	return (
 		<section
-			style={{ backgroundImage: `url(${BgImage})` }}
+			style={{
+				backgroundImage: `url(${BgImage})`,
+				backgroundSize: "100% 120rem",
+			}}
 			ref={refBlog}
 			className={`transition-opacity ease-in duration-700 ${
 				isVisible ? "opacity-100" : "opacity-0"
 			} h-[120rem] w-full size-max text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top  bg-blend-lighten`}
 		>
-			<div className='relative top-1/4 text-center'>
+			<div className='relative top-[22rem] text-center'>
 				<div
 					className={`${
 						isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
-					} text-5xl font-manropemedium leading-normal text-transparent bg-clip-text bg-gradient-green from-white to-igreen tracking-tight`}
+					} text-5xl font-manropemedium leading-normal text-transparent bg-clip-text blog-title tracking-tight`}
 				>
 					<div>Future Tech Unfolded</div>
 					<div>Discovering Tomorrow's Solutions</div>
 				</div>
-				<div className='text-1xl w-full font-plexlight tracking-wide my-12 leading-8	flex justify-center justify-items-center'>
+				<div className='text-1xl w-full font-plexlight tracking-wide my-12 leading-8 flex justify-center justify-items-center'>
 					<div
 						className={`${
 							isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
@@ -77,8 +80,8 @@ export default function Blog() {
 					>
 						<SwiperSlide>
 							<BlogCard
-								label='Our mission is to build multimodal AI systems'
-								image={First}
+								label='The Creative Future of  Generative AI'
+								image={Third}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
@@ -90,7 +93,7 @@ export default function Blog() {
 						<SwiperSlide>
 							<BlogCard
 								label='Our mission is to build multimodal AI systems'
-								image={Third}
+								image={First}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>

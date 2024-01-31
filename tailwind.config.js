@@ -23,8 +23,8 @@ module.exports = withMT({
 				manropeextrabold: "ManropeExtraBold",
 			},
 			backgroundImage: {
-				"gradient-green": "linear-gradient(145deg, var(--tw-gradient-stops))",
-				"gradient-white": "linear-gradient(174deg, var(--tw-gradient-stops))",
+				"gradient-green": "linear-gradient(var(--tw-gradient-stops))",
+				"gradient-white": "linear-gradient(var(--tw-gradient-stops))",
 			},
 			transitionTimingFunction: {
 				"in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
@@ -34,16 +34,27 @@ module.exports = withMT({
 				slidein: {
 					from: {
 						opacity: 0,
+						scale: 0.1,
 						transform: "translateY(-10px)",
 					},
 					to: {
 						opacity: 1,
+						scale: 1,
 						transform: "translateY(0)",
+					},
+				},
+				fadein: {
+					from: {
+						opacity: 0,
+					},
+					to: {
+						opacity: 1,
 					},
 				},
 			},
 			animation: {
 				slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
+				fadein: "fadein 1s ease var(--fadein-delay, 0) forwards",
 			},
 		},
 	},

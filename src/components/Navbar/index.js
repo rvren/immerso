@@ -6,12 +6,8 @@ import {
 	IconButton,
 	List,
 	ListItem,
-	Menu,
-	MenuHandler,
-	MenuList,
-	MenuItem,
+	Button,
 } from "@material-tailwind/react";
-import { motion, useScroll } from "framer-motion";
 import {
 	ChevronDownIcon,
 	Bars3Icon,
@@ -20,7 +16,7 @@ import {
 
 import iChatGPT from "../../assets/images/navigation/ichatgpt.png";
 import iLanguage from "../../assets/images/navigation/ilanguage.png";
-import iSport from "../../assets/images/navigation/isports.png";
+import iSport from "../../assets/images/navigation/isports.svg";
 import iMusic from "../../assets/images/navigation/imusic.png";
 import iImage from "../../assets/images/navigation/iimage.png";
 import iVideo from "../../assets/images/navigation/ivideo.png";
@@ -30,34 +26,40 @@ import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 
 const navListMenuItems = [
 	{
-		title: "iBharath ChatGPT",
+		title: "iBharatBol",
 		description: "Dummy for iBharath",
 		icon: iChatGPT,
+		link: "/bharatbol",
 	},
 	{
 		title: "iImage",
 		description: "Dummy for iImage",
 		icon: iImage,
+		link: "/image",
 	},
 	{
 		title: "iSports",
 		description: "Dummy for iSports",
 		icon: iSport,
+		link: "/sports",
 	},
 	{
 		title: "iLanguage",
 		description: "Dummy for iLanguage",
 		icon: iLanguage,
+		link: "/language",
 	},
 	{
 		title: "iVideo",
 		description: "Dummy for iVideo",
 		icon: iVideo,
+		link: "/video",
 	},
 	{
 		title: "iMusic",
 		icon: iMusic,
 		description: "Nostalgia Comes Alive!",
+		link: "/music",
 	},
 	// {
 	// 	title: "iEducation",
@@ -76,26 +78,31 @@ const companyListMenuItems = [
 		title: "About Us",
 		description: "Dummy for about us",
 		icon: iChatGPT,
+		link: "/about",
 	},
 	{
 		title: "Career",
 		description: "Dummy for career",
 		icon: iImage,
+		link: "/career",
 	},
 	{
 		title: "News",
 		description: "Dummy for news",
 		icon: iSport,
+		link: "/news",
 	},
 	{
 		title: "Blogs",
 		description: "Dummy for blogs",
 		icon: iLanguage,
+		link: "/blogs",
 	},
 	{
 		title: "Contact Us",
 		description: "Dummy for contact us",
 		icon: iVideo,
+		link: "/contact",
 	},
 ];
 
@@ -130,10 +137,15 @@ function NavList() {
 				variant='small'
 				className='font-medium'
 			>
-				<ListItem className='flex items-center gap-2 py-2 pr-4 text-white font-plexmedium'>
+				<ListItem className='flex items-center gap-2 py-2 pr-4 text-ibodygrey font-plexmedium'>
 					Pricing
 				</ListItem>
 			</Typography>
+			<div class='rounded-none beta-btn ml-8 p-[0.125rem]'>
+				<div class='bg-black backdrop-blur-sm p-[0.5rem]'>
+					<div class='font-plexmedium text-white text-xs'>Beta Site</div>
+				</div>
+			</div>
 		</List>
 	);
 }

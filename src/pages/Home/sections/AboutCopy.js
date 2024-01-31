@@ -11,16 +11,14 @@ export default function About() {
 		<section
 			style={{ backgroundImage: `url(${BgImage})` }}
 			ref={refAbout}
-			className={`transition-opacity ease-in duration-700 ${
-				isVisible ? "opacity-100" : "opacity-0"
-			} relative h-screen w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top `}
+			className={`relative h-screen w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top `}
 		>
 			<div className='top-30 left-0 text-center'>
 				<div className='absolute top-28 h-[6.5rem] my-auto mx-48 w-full text-center overflow-hidden '>
 					<div
 						className={`${
 							isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
-						} opacity-0 text-9xl tracking-widest text-justify font-manropeextrabold`}
+						} animate-slidein [--slidein-delay:300ms] opacity-0 text-9xl tracking-widest text-justify font-manropeextrabold`}
 					>
 						ABOUT IMMERSO AI
 					</div>
@@ -35,17 +33,16 @@ export default function About() {
 								isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
 							} text-xl max-w-2xl font-plexlight tracking-wide text-left text-igrey leading-10`}
 						>
-							Immerso.ai: An Imaginative Deep Tech and Generative AI company,
-							under the Eros Investment Group. Our mission is to pioneer the
-							generative media landscape, leveraging our rich intellectual
-							property and licensed data. At the heart of Immerso.ai lies a
-							commitment to cultivating advanced foundation models, enhancing
-							value for users, creators, and brands alike. With a focus on
-							multimodal foundation and specialized models, we cater to diverse
-							industry needs. Immerso.ai also represents the future of deep
-							technology, encompassing state-of-the-art Cloud & GPU
-							Infrastructure, an AI University, and a thriving hub for
-							Generative AI startups and enterprises
+							An Imaginative Deep Tech and Generative AI company, under the Eros
+							Investment Group. Our mission is to pioneer the generative media
+							landscape, leveraging our rich intellectual property and licensed
+							data. At the heart of Immerso.ai lies a commitment to cultivating
+							advanced foundation models, enhancing value for users, creators,
+							and brands alike. With a focus on multimodal foundation and
+							specialized models, we cater to diverse industry needs. Immerso.ai
+							also represents the future of deep technology, encompassing
+							state-of-the-art Cloud & GPU Infrastructure, an AI University, and
+							a thriving hub for Generative AI startups and enterprises
 						</div>
 						<Button
 							variant='gradient'

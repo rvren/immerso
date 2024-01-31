@@ -4,7 +4,6 @@ import {
 	CardBody,
 	Typography,
 } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import { useIsVisible } from "../../utils/hooks/useIsVisible";
 
@@ -18,8 +17,8 @@ export default function ImmersoCard({ label, image, isHoverable }) {
 			className={`transition-opacity ease-in duration-700 ${
 				isVisible ? "opacity-100" : "opacity-0"
 			} relative grid h-[25rem] w-full max-w-[25rem] items-end justify-center overflow-hidden text-center rounded-none mt-6 mb-0 ${
-				isHoverable && "hover:scale-150"
-			} hover:z-10 cursor-pointer transition-all transition delay-100 duration-300 ease-in-out bg-transparent`}
+				isHoverable && "hover:scale-[1.2]"
+			} transform-gpu hover:z-10 cursor-pointer transition-all transition delay-100 duration-300 ease-in-out bg-transparent hover:shadow-lg hover:shadow-inherit	`}
 		>
 			<CardHeader
 				floated={false}

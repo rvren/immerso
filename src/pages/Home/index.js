@@ -15,9 +15,9 @@ export default function Home() {
 			<Blog />
 			<News />
 			<Closing
-				text='Be Inspired'
-				subText='Your Ideas. Our Tools!'
-				ctaText='Start your free trial now'
+				text='Level Up your '
+				subText='Rumble Experience!'
+				ctaText='Start your free trial now!!'
 			/>
 		</>
 	);

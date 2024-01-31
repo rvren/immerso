@@ -93,3 +93,21 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.hero-title {
+  background: linear-gradient(174deg, #FFF 36.3%, rgba(255, 255, 255, 0.60) 102.59%);
+  background-clip: text;
+}
+
+.blog-title {
+  background: linear-gradient(145deg, #FFF 20.88%, rgba(255, 255, 255, 0.00) 111.71%);
+	background-clip: text;
+}
+
+.immerso-gradient {
+  background: linear-gradient(145deg, #00D3A9 20.88%, #9600FF 111.71%);
+}
+
+.beta-btn {
+  background: linear-gradient(145deg, #00D3A9 20.88%, #9600FF 111.71%);
+}

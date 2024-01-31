@@ -1,12 +1,11 @@
 import { MegaMenuWithHover } from "./components/Navbar";
-import Home from "./pages/Home";
 import Footer from "./components/Footer";
 
-function App() {
+function App({ component }) {
 	return (
-		<div className='scroll-smooth	'>
+		<div className='scroll-smooth'>
 			<MegaMenuWithHover />
-			<Home />
+			{component}
 			<Footer />
 		</div>
 	);

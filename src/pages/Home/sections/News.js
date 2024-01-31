@@ -20,10 +20,10 @@ export default function News() {
 			} relative h-screen min-h-[80rem] w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top`}
 		>
 			<div
-				className='absolute w-[40rem] h-[50rem] top-48 left-[30%]'
+				className='absolute w-[40rem] h-[50rem] top-48 left-[35%]'
 				style={{ backgroundImage: `url(${CenterImage})` }}
 			></div>
-			<div className='absolute left-[15%] top-[18%] justify-items-center '>
+			<div className='absolute left-[18%] top-[18%] justify-items-center '>
 				<div className='text-4xl font-manropebold tracking-wide leading-[4rem]'>
 					<div
 						className={`${
@@ -40,7 +40,7 @@ export default function News() {
 						Stay Informed
 					</div>
 				</div>
-				<div className='relative cursor-pointer backdrop-blur-3xl	'>
+				<div className='relative cursor-pointer '>
 					<img
 						src={NewsImage}
 						alt='news_bg'
@@ -49,12 +49,12 @@ export default function News() {
 					<img
 						src={GlassImage}
 						alt='glass_bg'
-						className='absolute top-72 -right-[12rem] h-[17rem]'
+						className='absolute top-72 -right-[14rem] h-[17rem] backdrop-blur-3xl'
 					/>
 					<div
 						className={`${
 							isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
-						} opacity-0 absolute top-[20rem] left-[30rem] text-4xl font-plexmedium`}
+						} opacity-0 absolute top-[20rem] left-[28rem] text-4xl font-plexmedium`}
 					>
 						Gujarat government, Eros Investment Group Launch AI Park and AI
 						University
@@ -62,14 +62,14 @@ export default function News() {
 					<div
 						className={`${
 							isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
-						} opacity-0 absolute top-[30rem] left-[30rem] font-plexmedium`}
+						} opacity-0 absolute top-[30rem] left-[28rem] font-plexmedium`}
 					>
 						15 January 2024
 					</div>
 					<img
 						src={ArrowImage}
 						alt='arrow_bg'
-						className='absolute top-[28rem] -right-[10rem] h-[4rem] '
+						className='absolute top-[28rem] -right-[12rem] h-[4rem] '
 					/>
 				</div>
 			</div>

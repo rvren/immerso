@@ -21,8 +21,9 @@ const LINKS = [
 					})}
 				</div>
 				<div>
-					Immerso AIIP Limited, Second Floor, 18-20 North Quay, Douglas, Isle of
-					Man IM1 4LE.
+					Immerso AIIP Limited, <br />
+					Second Floor, 18-20 North Quay, <br />
+					Douglas, Isle of Man IM1 4LE.
 				</div>
 			</div>,
 		],

@@ -15,55 +15,59 @@ export default function Products() {
 	const isVisible = useIsVisible(ref2);
 	return (
 		<section
-			style={{ backgroundImage: `url(${BgImage})` }}
+			style={{
+				backgroundImage: `url(${BgImage})`,
+				backgroundSize: "100% 90rem",
+			}}
 			ref={ref2}
 			className={`transition-opacity ease-in duration-700 ${
 				isVisible ? "opacity-100" : "opacity-0"
-			} relative h-dvh min-h-[80rem] text-white lg:bg-cover md:bg-fit bg-no-repeat bg-right-top flex flex-column bg-blend-exclusion`}
+			} h-screen min-h-[90rem] w-full text-white lg:bg-cover md:bg-cover bg-no-repeat bg-right-top bg-blend-exclusion pt-24`}
 		>
-			<div className='absolute left-[15%] top-[8%] justify-items-center '>
-				<div
+			<div className='w-[95rem] m-auto h-[100rem]'>
+				<p
 					className={`${
 						isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
-					} text-4xl font-manropebold tracking-wide leading-[4rem]`}
+					} text-4xl font-manropemedium tracking-wide leading-[4rem] text-start ml-36`}
 				>
 					<div>Discover the Full Spectrum of Multimodal AI Tools.</div>
 					<div>To Create, Engage, And prompt Your Stories.</div>
-				</div>
-			</div>
-			<motion.div className='absolute left-[15%] w-full max-w-7xl lg:top-72 md:top-24 mx-auto flex flex-row flex-wrap justify-center gap-x-8 items-center'>
-				<ImmersoCard
-					label='iBharat ChatGPT'
-					image={iChatGPT}
-					isHoverable
-				/>
-				<ImmersoCard
-					label='iLanguage'
-					image={iLanguage}
-					isHoverable
-				/>
-				<ImmersoCard
-					label='iMusic'
-					image={iMusic}
-					isHoverable
-				/>
+				</p>
 
-				<ImmersoCard
-					label='iSport'
-					image={iSport}
-					isHoverable
-				/>
-				<ImmersoCard
-					label='iImage'
-					image={iImage}
-					isHoverable
-				/>
-				<ImmersoCard
-					label='iVideo'
-					image={iVideo}
-					isHoverable
-				/>
-			</motion.div>
+				<motion.div className='w-[95rem] mx-auto flex flex-row flex-wrap justify-center gap-x-8 items-center pt-24'>
+					<ImmersoCard
+						label='iBharatBol'
+						image={iChatGPT}
+						isHoverable
+					/>
+					<ImmersoCard
+						label='iLanguage'
+						image={iLanguage}
+						isHoverable
+					/>
+					<ImmersoCard
+						label='iMusic'
+						image={iMusic}
+						isHoverable
+					/>
+
+					<ImmersoCard
+						label='iSport'
+						image={iSport}
+						isHoverable
+					/>
+					<ImmersoCard
+						label='iImage'
+						image={iImage}
+						isHoverable
+					/>
+					<ImmersoCard
+						label='iVideo'
+						image={iVideo}
+						isHoverable
+					/>
+				</motion.div>
+			</div>
 		</section>
 	);
 }

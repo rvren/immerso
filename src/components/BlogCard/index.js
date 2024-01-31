@@ -10,7 +10,7 @@ export default function BlogCard({ label, image, isHoverable }) {
 	return (
 		<Card
 			shadow={false}
-			className={`relative grid h-[35rem] w-full max-w-[25rem] items-end justify-center overflow-hidden text-center rounded-none mt-6 mb-0 ml-2 mr-2 hover:-translate-y-6 hover:z-1000 cursor-pointer transition-all transition delay-50 duration-300 ease-in-out`}
+			className={`relative grid h-[35rem] w-full max-w-[25rem] items-end justify-center overflow-hidden text-center rounded-none mt-6 mb-0 ml-2 mr-2 hover:-translate-y-6 hover:z-1000 cursor-pointer transition-all transition delay-50 duration-300 ease-in-out bg-transparent`}
 		>
 			<CardHeader
 				floated={false}
