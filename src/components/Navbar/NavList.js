@@ -77,7 +77,7 @@ export default function NavListMenu({ navListMenuItems, name }) {
 				<MenuList className='hidden w-screen lg:block font-plexmedium bg-menu backdrop-blur-md border-0	p-12 pb-36'>
 					<ul className='grid grid-cols-4 justify-center outline-none outline-0'>
 						<div className='col-span-2 mx-auto'>
-							<MenuItem className='w-[35rem] max-h-[4rem]'>
+							<MenuItem className='w-[35rem] max-h-[4rem] hover:bg-transparent'>
 								<img
 									className='transition-all transition delay-100 duration-200 ease-in-out object-cover aspect-video mx-24'
 									src={selectedProduct?.icon}
@@ -85,7 +85,7 @@ export default function NavListMenu({ navListMenuItems, name }) {
 								/>
 								{selectedProduct?.title && (
 									<div className='text-white text-lg font-medium mt-4 mx-24'>
-										{selectedProduct?.title}
+										{selectedProduct?.navTitle}
 									</div>
 								)}
 								{selectedProduct?.description && (

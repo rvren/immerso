@@ -31,7 +31,7 @@ export default function Products() {
 					} text-4xl font-manropemedium tracking-wide leading-[4rem] text-start ml-36`}
 				>
 					<div>Discover the Full Spectrum of Multimodal AI Tools.</div>
-					<div>To Create, Engage, And prompt Your Stories.</div>
+					<div>Invent, Immerse, and Inspire Your Tales!</div>
 				</p>
 
 				<motion.div className='w-[95rem] mx-auto flex flex-row flex-wrap justify-center gap-x-8 items-center pt-24'>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import {
 	Navbar,
 	Collapse,
@@ -14,93 +15,94 @@ import {
 	XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-import iChatGPT from "../../assets/images/navigation/ichatgpt.png";
-import iLanguage from "../../assets/images/navigation/ilanguage.png";
+import iChatGPT from "../../assets/images/navigation/ichatgpt.svg";
+import iLanguage from "../../assets/images/navigation/ilanguage.svg";
 import iSport from "../../assets/images/navigation/isports.svg";
-import iMusic from "../../assets/images/navigation/imusic.png";
-import iImage from "../../assets/images/navigation/iimage.png";
-import iVideo from "../../assets/images/navigation/ivideo.png";
+import iMusic from "../../assets/images/navigation/imusic.svg";
+import iImage from "../../assets/images/navigation/iimage.svg";
+import iVideo from "../../assets/images/navigation/ivideo.svg";
 import NavListMenu from "./NavList";
 
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 
 const navListMenuItems = [
 	{
-		title: "iBharatBol",
-		description: "Dummy for iBharath",
+		title: "iBharathBol",
+		navTitle: "iBharathBol - Coming Soon",
+		description: "Voices of India, Echoing Unity.",
 		icon: iChatGPT,
-		link: "/bharatbol",
+		link: "",
 	},
 	{
 		title: "iImage",
-		description: "Dummy for iImage",
+		navTitle: "iImage - Coming Soon",
+		description: "Where Every Pixel Tells a Story.",
 		icon: iImage,
-		link: "/image",
+		link: "",
 	},
 	{
 		title: "iSports",
-		description: "Dummy for iSports",
+		navTitle: "iSports - Coming Soon",
+		description: "Igniting Passion, Uniting Fans.",
 		icon: iSport,
-		link: "/sports",
+		link: "",
 	},
 	{
 		title: "iLanguage",
-		description: "Dummy for iLanguage",
+		navTitle: "iLanguage - Coming Soon",
+		description: "Bridging Cultures, Connecting Worlds.",
 		icon: iLanguage,
-		link: "/language",
+		link: "",
 	},
 	{
 		title: "iVideo",
-		description: "Dummy for iVideo",
+		navTitle: "iVideo - Coming Soon",
+		description: "Capturing Moments, Crafting Memories.",
 		icon: iVideo,
-		link: "/video",
+		link: "",
 	},
 	{
 		title: "iMusic",
+		navTitle: "iMusic - Coming Soon",
 		icon: iMusic,
 		description: "Nostalgia Comes Alive!",
-		link: "/music",
+		link: "",
 	},
-	// {
-	// 	title: "iEducation",
-	// 	description: "Dummy for iEducation",
-	// 	icon: iMusic,
-	// },
-	// {
-	// 	title: "iScript",
-	// 	description: "Dummy for iScript",
-	// 	icon: iMusic,
-	// },
 ];
 
 const companyListMenuItems = [
 	{
 		title: "About Us",
+		navTitle: "About Us - Coming Soon",
 		description: "Dummy for about us",
 		icon: iChatGPT,
-		link: "/about",
+		link: "",
 	},
 	{
 		title: "Career",
+		navTitle: "Career - Coming Soon",
 		description: "Dummy for career",
 		icon: iImage,
-		link: "/career",
+		link: "",
 	},
 	{
 		title: "News",
+		navTitle: "News - Coming Soon",
 		description: "Dummy for news",
 		icon: iSport,
-		link: "/news",
+		link: "",
 	},
 	{
 		title: "Blogs",
+		navTitle: "Blogs - Coming Soon",
 		description: "Dummy for blogs",
 		icon: iLanguage,
-		link: "/blogs",
+		link: "",
 	},
 	{
 		title: "Contact Us",
-		description: "Dummy for contact us",
+		navTitle: "Contact Us",
+		description: "Connect with us!",
 		icon: iVideo,
 		link: "/contact",
 	},
@@ -115,7 +117,7 @@ function NavList() {
 				variant='small'
 				className='font-medium'
 			>
-				<ListItem className='flex items-center gap-2 py-2 pr-4 text-white font-plexmedium'>
+				<ListItem className='flex items-center gap-2 py-2 pr-4 text-ibodygrey font-plexmedium'>
 					Home
 				</ListItem>
 			</Typography>
@@ -133,7 +135,7 @@ function NavList() {
 			/>
 			<Typography
 				as='a'
-				href='/about'
+				href=''
 				variant='small'
 				className='font-medium'
 			>
@@ -141,10 +143,8 @@ function NavList() {
 					Pricing
 				</ListItem>
 			</Typography>
-			<div class='rounded-none beta-btn ml-8 p-[0.125rem]'>
-				<div class='bg-black backdrop-blur-sm p-[0.5rem]'>
-					<div class='font-plexmedium text-white text-xs'>Beta Site</div>
-				</div>
+			<div className='immerso-gradient ml-8 font-plexbold text-white text-xs flex justify-center align-items-center h-[2rem] p-2'>
+				Beta Site
 			</div>
 		</List>
 	);

@@ -1,4 +1,5 @@
 import App from "../App";
+import Error from "../components/Error";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -20,5 +21,9 @@ export const routes = [
 	{
 		path: "/products",
 		element: <App component={<Products />} />,
+	},
+	{
+		path: "*",
+		element: <App component={<Error />} />,
 	},
 ];

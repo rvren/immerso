@@ -37,7 +37,7 @@ export default function Blog() {
 					} text-5xl font-manropemedium leading-normal text-transparent bg-clip-text blog-title tracking-tight`}
 				>
 					<div>Future Tech Unfolded</div>
-					<div>Discovering Tomorrow's Solutions</div>
+					<div>Discovering Tomorrow's Solutions Today!</div>
 				</div>
 				<div className='text-1xl w-full font-plexlight tracking-wide my-12 leading-8 flex justify-center justify-items-center'>
 					<div
@@ -86,43 +86,25 @@ export default function Blog() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<BlogCard
-								label='Our mission is to build multimodal AI systems'
+								label='Deep Learning Advancements'
 								image={Second}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<BlogCard
-								label='Our mission is to build multimodal AI systems'
+								label='Autonomous Systems and Robotics'
 								image={First}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<BlogCard
-								label='Our mission is to build multimodal AI systems'
+								label='AI Ethics and Fairness'
 								image={Fourth}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<BlogCard
-								label='Our mission is to build multimodal AI systems'
-								image={Fifth}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<BlogCard
-								label='Our mission is to build multimodal AI systems'
-								image={Third}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<BlogCard
-								label='Our mission is to build multimodal AI systems'
-								image={Fourth}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<BlogCard
-								label='Our mission is to build multimodal AI systems'
+								label='AI for Healthcare'
 								image={Fifth}
 							/>
 						</SwiperSlide>

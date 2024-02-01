@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Typography } from "@material-tailwind/react";
 import { useIsVisible } from "../../../utils/hooks/useIsVisible";
 import BgImage from "../../../assets/images/news/news.png";
 import CenterImage from "../../../assets/images/news/center.svg";
@@ -46,31 +47,37 @@ export default function News() {
 						alt='news_bg'
 						className='h-[28rem] my-4'
 					/>
-					<img
-						src={GlassImage}
-						alt='glass_bg'
-						className='absolute top-72 -right-[14rem] h-[17rem] backdrop-blur-3xl'
-					/>
-					<div
-						className={`${
-							isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
-						} opacity-0 absolute top-[20rem] left-[28rem] text-4xl font-plexmedium`}
+					<Typography
+						as='a'
+						href='https://www.crn.in/news/immerso-ai-and-yotta-announce-strategic-partnership-for-generative-media/'
+						target='_blank'
 					>
-						Gujarat government, Eros Investment Group Launch AI Park and AI
-						University
-					</div>
-					<div
-						className={`${
-							isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
-						} opacity-0 absolute top-[30rem] left-[28rem] font-plexmedium`}
-					>
-						15 January 2024
-					</div>
-					<img
-						src={ArrowImage}
-						alt='arrow_bg'
-						className='absolute top-[28rem] -right-[12rem] h-[4rem] '
-					/>
+						<img
+							src={GlassImage}
+							alt='glass_bg'
+							className='absolute top-72 -right-[14rem] h-[17rem] backdrop-blur-3xl'
+						/>
+						<div
+							className={`${
+								isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
+							} opacity-0 absolute top-[20rem] left-[28rem] text-4xl font-plexmedium`}
+						>
+							Immerso AI and Yotta announce strategic partnership for Generative
+							Media
+						</div>
+						<div
+							className={`${
+								isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
+							} opacity-0 absolute top-[30rem] left-[28rem] font-plexmedium`}
+						>
+							16 January 2024
+						</div>
+						<img
+							src={ArrowImage}
+							alt='arrow_bg'
+							className='absolute top-[28rem] -right-[12rem] h-[4rem] '
+						/>
+					</Typography>
 				</div>
 			</div>
 		</section>

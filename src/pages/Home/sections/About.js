@@ -40,9 +40,9 @@ export default function About() {
 							advanced foundation models, enhancing value for users, creators,
 							and brands alike. With a focus on multimodal foundation and
 							specialized models, we cater to diverse industry needs. Immerso.ai
-							also represents the future of deep technology, encompassing
-							state-of-the-art Cloud & GPU Infrastructure, an AI University, and
-							a thriving hub for Generative AI startups and enterprises
+							also represents the future of deep technology, encompassing state
+							of the art Cloud & GPU Infrastructure, an AI University, and a
+							thriving hub for Generative AI startups and enterprises
 						</div>
 						<Button
 							variant='gradient'
@@ -52,7 +52,7 @@ export default function About() {
 				</div>
 			</div>
 			<div className='w-full absolute -bottom-20 text-center text-4xl tracking-wider text-igrey font-plexlight'>
-				Artificially Intelligent.Genuinely useful
+				Artificially Intelligent. Genuinely useful
 			</div>
 		</section>
 	);

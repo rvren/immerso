@@ -11,14 +11,14 @@ export default function Home() {
 		<motion.section
 			style={{
 				backgroundImage: `url(${HeroBgImage})`,
-				backgroundSize: "100% 60rem",
+				backgroundSize: "100% 100rem",
 			}}
 			ref={ref1}
 			className={`transition-opacity ease-in duration-700 ${
 				isVisible ? "opacity-100" : "opacity-0"
-			} h-screen min-h-[90rem] w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top`}
+			} h-screen w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-center`}
 		>
-			<div className='relative top-60 left-72 flex flex-col'>
+			<div className='relative top-[25rem] left-72 flex flex-col'>
 				<div
 					className={`${
 						isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"

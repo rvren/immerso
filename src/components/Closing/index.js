@@ -10,9 +10,7 @@ export default function Closing({ text, subText, ctaText }) {
 		<section
 			style={{ backgroundImage: `url(${BgImage})` }}
 			ref={refClosing}
-			className={`transition-opacity ease-in duration-700 ${
-				isVisible ? "opacity-100" : "opacity-0"
-			} h-screen w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top`}
+			className={`transition-opacity ease-in duration-700  h-screen w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top bg-gray-950/30 backdrop-brightness-75`}
 		>
 			<div className='relative top-1/3 text-center'>
 				<div

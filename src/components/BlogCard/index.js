@@ -18,20 +18,18 @@ export default function BlogCard({ label, image, isHoverable }) {
 				color='transparent'
 				className='absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-top  transition-all transition delay-100 duration-300 ease-in-out'
 				style={{ backgroundImage: `url(${image})` }}
-			>
-				<div className='absolute inset-0 h-full w-full' />
-			</CardHeader>
-			<CardBody className='backdrop-blur-2xl w-full'>
-				<div className='text-wrap w-4/5 '>
+			></CardHeader>
+			<CardBody className='backdrop-blur-2xl w-[25rem] h-[7rem]'>
+				<div className='text-wrap w-4/5 flex items-center'>
 					<Typography
 						color='white'
-						className='text-2xl	text-left font-plexmedium '
+						className='text-2xl	text-left font-plexmedium align-middle'
 					>
 						{label}
 					</Typography>
 				</div>
 				<div className='w-1/5'>
-					<Logo className='absolute h-[3rem] top-10 right-2' />
+					<Logo className='absolute h-[3rem] top-8 right-2' />
 				</div>
 			</CardBody>
 		</Card>
