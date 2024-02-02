@@ -64,8 +64,11 @@ body {
             color: #FFFFFF !important;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 2.5rem;
-            font-size: 0.5rem;
+						height: 2rem;
+						width: 2rem;
+            padding: 4rem;
+            font-size: 0.25rem;
+						font-weight: 800;
             border-radius: 100%;
             z-index: 10;
           }

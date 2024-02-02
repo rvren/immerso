@@ -11,7 +11,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter(AppRoutes);
 
 let updatedCount = JSON.parse(localStorage.getItem("refreshCount"));
-console.log("updatedCount", updatedCount);
 localStorage.setItem("refreshCount", updatedCount === 2 ? 1 : 2);
 
 root.render(

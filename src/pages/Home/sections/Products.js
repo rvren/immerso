@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { useIsVisible } from "../../../utils/hooks/useIsVisible";
 import BgImage from "../../../assets/images/product/bg.png";
-import iChatGPT from "../../../assets/images/product/iChatGPT.svg";
+import iBharathBol from "../../../assets/images/product/iBharathBol.svg";
 import iLanguage from "../../../assets/images/product/iLanguage.svg";
 import iSport from "../../../assets/images/product/iSports.svg";
 import iMusic from "../../../assets/images/product/iMusic.svg";
@@ -37,7 +37,7 @@ export default function Products() {
 				<motion.div className='w-[95rem] mx-auto flex flex-row flex-wrap justify-center gap-x-8 items-center pt-24'>
 					<ImmersoCard
 						label='iBharatBol'
-						image={iChatGPT}
+						image={iBharathBol}
 						isHoverable
 					/>
 					<ImmersoCard

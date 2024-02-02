@@ -43,7 +43,7 @@ export default function Footer() {
 			className='animate-slidein [--slidein-delay:500ms] opacity-0 relative bg-cover bg-no-repeat bg-center'
 			style={{ backgroundImage: `url(${HeroBgImage})` }}
 		>
-			<div className='px-8 py-8'>
+			<div className='px-8 py-8 lg:block'>
 				<div className='flex flex-row gap-y-6 gap-x-24 py-6 md:justify-between grid grid-cols-2'>
 					<div className='relative left-48 flex flex-row justify-left'>
 						<Logo />
@@ -103,7 +103,7 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className='flex  flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 py-6 text-center md:justify-around '>
+				<div className='flex flex-col lg:flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 py-6 text-center md:justify-around '>
 					<div>
 						<Typography className='text-white text-start md:mb-0 font-plexmedium'>
 							Terms & Conditions

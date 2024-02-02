@@ -43,6 +43,18 @@ module.exports = withMT({
 						transform: "translateY(0)",
 					},
 				},
+				slideup: {
+					from: {
+						opacity: 0,
+						scale: 0.1,
+						transform: "translateY(10px)",
+					},
+					to: {
+						opacity: 1,
+						scale: 1,
+						transform: "translateY(0px)",
+					},
+				},
 				fadein: {
 					from: {
 						opacity: 0,
@@ -54,6 +66,7 @@ module.exports = withMT({
 			},
 			animation: {
 				slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
+				slideup: "slideup 1s ease var(--slidein-delay, 0) forwards",
 				fadein: "fadein 1s ease var(--fadein-delay, 0) forwards",
 			},
 		},

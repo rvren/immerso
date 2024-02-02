@@ -36,7 +36,6 @@ export default function Form() {
 				(result) => {
 					setIsSent(true);
 					setTimeout(() => setIsSent(false), 10000);
-					console.log(result.text);
 				},
 				(error) => {
 					console.error(error.text);

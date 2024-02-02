@@ -9,12 +9,15 @@ export default function About() {
 	const isVisible = useIsVisible(refAbout);
 	return (
 		<section
-			style={{ backgroundImage: `url(${BgImage})` }}
+			style={{
+				backgroundImage: `url(${BgImage})`,
+				backgroundSize: "100% 100rem",
+			}}
 			ref={refAbout}
-			className={`relative h-screen w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top `}
+			className={`relative h-[70rem] w-full text-white lg:bg-cover bg-no-repeat bg-top`}
 		>
-			<div className='top-30 left-0 text-center'>
-				<div className='absolute top-28 h-[6.5rem] my-auto mx-48 w-full text-center overflow-hidden '>
+			<div className='absolute h-[60rem] top-30 left-0 text-center'>
+				<div className='relative top-28 h-[6.3rem] my-auto mx-48 w-full text-center overflow-hidden '>
 					<div
 						className={`${
 							isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
@@ -50,9 +53,6 @@ export default function About() {
 						/>
 					</div>
 				</div>
-			</div>
-			<div className='w-full absolute -bottom-20 text-center text-4xl tracking-wider text-igrey font-plexlight'>
-				Artificially Intelligent. Genuinely useful
 			</div>
 		</section>
 	);

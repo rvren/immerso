@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import {
 	Navbar,
 	Collapse,
@@ -7,7 +6,6 @@ import {
 	IconButton,
 	List,
 	ListItem,
-	Button,
 } from "@material-tailwind/react";
 import {
 	ChevronDownIcon,
@@ -15,6 +13,7 @@ import {
 	XMarkIcon,
 } from "@heroicons/react/24/outline";
 
+import DefaultImg from "../../assets/images/navigation/default.svg";
 import iChatGPT from "../../assets/images/navigation/ichatgpt.svg";
 import iLanguage from "../../assets/images/navigation/ilanguage.svg";
 import iSport from "../../assets/images/navigation/isports.svg";
@@ -74,36 +73,36 @@ const companyListMenuItems = [
 	{
 		title: "About Us",
 		navTitle: "About Us - Coming Soon",
-		description: "Dummy for about us",
-		icon: iChatGPT,
+		description: "",
+		icon: DefaultImg,
 		link: "",
 	},
 	{
 		title: "Career",
 		navTitle: "Career - Coming Soon",
-		description: "Dummy for career",
-		icon: iImage,
+		description: "",
+		icon: DefaultImg,
 		link: "",
 	},
 	{
 		title: "News",
 		navTitle: "News - Coming Soon",
-		description: "Dummy for news",
-		icon: iSport,
+		description: "",
+		icon: DefaultImg,
 		link: "",
 	},
 	{
 		title: "Blogs",
 		navTitle: "Blogs - Coming Soon",
-		description: "Dummy for blogs",
-		icon: iLanguage,
+		description: "",
+		icon: DefaultImg,
 		link: "",
 	},
 	{
 		title: "Contact Us",
 		navTitle: "Contact Us",
 		description: "Connect with us!",
-		icon: iVideo,
+		icon: DefaultImg,
 		link: "/contact",
 	},
 ];
@@ -121,10 +120,20 @@ function NavList() {
 					Home
 				</ListItem>
 			</Typography>
-			<NavListMenu
+			<Typography
+				as='a'
+				href='/'
+				variant='small'
+				className='font-medium'
+			>
+				<ListItem className='flex items-center gap-2 py-2 pr-4 text-ibodygrey font-plexmedium'>
+					Research
+				</ListItem>
+			</Typography>
+			{/* <NavListMenu
 				navListMenuItems={navListMenuItems}
 				name='Research'
-			/>
+			/> */}
 			<NavListMenu
 				navListMenuItems={navListMenuItems}
 				name='Products'

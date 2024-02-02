@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
-import BgImage from "../../../assets/images/blog/bg.png";
+import BgImage from "../../../assets/images/blog/bg.svg";
 import First from "../../../assets/images/blog/1st.png";
 import Second from "../../../assets/images/blog/2nd.png";
 import Third from "../../../assets/images/blog/3rd.png";
@@ -23,42 +23,43 @@ export default function Blog() {
 		<section
 			style={{
 				backgroundImage: `url(${BgImage})`,
-				backgroundSize: "100% 120rem",
+				// backgroundSize: "100% 170rem",
 			}}
 			ref={refBlog}
 			className={`transition-opacity ease-in duration-700 ${
 				isVisible ? "opacity-100" : "opacity-0"
-			} h-[120rem] w-full size-max text-white lg:bg-cover md:bg-fit bg-no-repeat bg-top  bg-blend-lighten`}
+			}  h-[160rem] w-full text-white lg:bg-cover md:bg-fit bg-no-repeat bg-right-top`}
 		>
-			<div className='relative top-[22rem] text-center'>
+			<div className='w-full  text-center text-4xl tracking-wider text-igrey font-plexlight pt-24'>
+				Artificially Intelligent.Genuinely useful
+			</div>
+			<div className='relative top-[16rem] text-center'>
 				<div
 					className={`${
 						isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
-					} text-5xl font-manropemedium leading-normal text-transparent bg-clip-text blog-title tracking-tight`}
+					} text-6xl font-manropemedium leading-normal text-transparent bg-clip-text blog-title tracking-tight`}
 				>
 					<div>Future Tech Unfolded</div>
 					<div>Discovering Tomorrow's Solutions Today!</div>
 				</div>
-				<div className='text-1xl w-full font-plexlight tracking-wide my-12 leading-8 flex justify-center justify-items-center'>
-					<div
-						className={`${
-							isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
-						} w-[60rem]`}
-					>
-						Explore the Frontier of AI Innovations in our AI Research Hub. Delve
-						into everything from machine learning breakthroughs to the ethical
-						application of AI, as we unravel the ways AI is reshaping our world.
-					</div>
+				<div
+					className={`${
+						isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
+					} w-[72rem] text-2xl font-plexlight tracking-wide my-36 mx-auto leading-10 flex justify-center justify-items-center`}
+				>
+					Explore the Frontier of AI Innovations in our AI Research Hub. Delve
+					into everything from machine learning breakthroughs to the ethical
+					application of AI, as we unravel the ways AI is reshaping our world.
 				</div>
 				<div
 					className={`${
 						isVisible && "animate-slidein [--slidein-delay:700ms] opacity-0"
-					} mt-72 h-[20rem] w-[80rem] mx-auto`}
+					} mt-96 h-[40rem] w-[100rem] mx-auto`}
 				>
 					<Swiper
 						effect={"coverflow"}
 						grabCursor={true}
-						centeredSlides={"auto"}
+						centeredSlides={true}
 						loop={true}
 						slidesPerView={"3"}
 						rewind={true}

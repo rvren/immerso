@@ -79,23 +79,23 @@ export default function NavListMenu({ navListMenuItems, name }) {
 						<div className='col-span-2 mx-auto'>
 							<MenuItem className='w-[35rem] max-h-[4rem] hover:bg-transparent'>
 								<img
-									className='transition-all transition delay-100 duration-200 ease-in-out object-cover aspect-video mx-24'
+									className='transition-all transition delay-100 duration-200 ease-in-out object-cover aspect-video mx-20'
 									src={selectedProduct?.icon}
 									alt={selectedProduct?.title}
 								/>
 								{selectedProduct?.title && (
-									<div className='text-white text-lg font-medium mt-4 mx-24'>
+									<div className='text-white text-lg font-medium mt-4 mx-20'>
 										{selectedProduct?.navTitle}
 									</div>
 								)}
 								{selectedProduct?.description && (
-									<div className='text-white text-sm font-light font-plexlight mx-24'>
+									<div className='text-white text-sm font-light font-plexlight mx-20'>
 										{selectedProduct?.description}
 									</div>
 								)}
 							</MenuItem>
 						</div>
-						<div className='col-span-2 border-l border-igreen h-[13rem] border-dashed pl-24 pt-6 mt-24'>
+						<div className='col-span-2 border-l border-igreen h-[13rem] border-dashed ml-0 pl-24 pt-6 mt-[5rem]'>
 							<div className='grid grid-cols-2 gap-x-8'>{renderItems}</div>
 						</div>
 					</ul>

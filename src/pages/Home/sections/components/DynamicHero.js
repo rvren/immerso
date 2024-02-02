@@ -4,6 +4,7 @@ import HeroBgImage from "../../../../assets/images/home/bgoverlay1.svg";
 import HeroBgVideo1 from "../../../../assets/images/home/bgvideo1.mp4";
 import HeroBgVideo2 from "../../../../assets/images/home/bgvideo2.mp4";
 import HeroGif1 from "../../../../assets/images/home/bggif1.gif";
+import HeroGif2 from "../../../../assets/images/home/bggif2.gif";
 import Button from "../../../../components/Button";
 
 const DYNAMIC_CONTENT_MAPPING = {
@@ -19,7 +20,7 @@ const DYNAMIC_CONTENT_MAPPING = {
 	2: {
 		image: HeroBgImage,
 		video: HeroBgVideo2,
-		gif: HeroGif1,
+		gif: HeroGif2,
 		title: "The Big Bang of AI",
 		subtTitle: "Right Here Right Now !",
 		description:
@@ -34,7 +35,7 @@ export default function DynamicHero() {
 	const count = JSON.parse(localStorage.getItem("refreshCount")) ?? 1;
 	return (
 		<div ref={ref1}>
-			<div class='video-docker absolute top-0 left-0 w-full h-[80rem] overflow-hidden backdrop-blur-2xl'>
+			<div class='video-docker absolute top-0 left-0 w-full h-[65rem] overflow-hidden backdrop-blur-2xl'>
 				<video
 					className='min-w-full min-h-full absolute object-cover'
 					autoPlay
@@ -57,21 +58,21 @@ export default function DynamicHero() {
 				<div className='lg:basis-1/2  md:w-full'>
 					<div
 						className={`${
-							isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
+							isVisible && "animate-slideup [--slidein-delay:300ms] opacity-0"
 						} text-7xl font-semibold leading-loose font-manropebold tracking-tight hero-title inline-block bg-clip-text text-transparent`}
 					>
 						{DYNAMIC_CONTENT_MAPPING[count]?.title}
 					</div>
 					<div
 						className={`${
-							isVisible && "animate-slidein [--slidein-delay:500ms] opacity-0"
+							isVisible && "animate-slideup [--slidein-delay:300ms] opacity-0"
 						} text-5xl font-normal leading-10 font-manropemedium tracking-tight	hero-title inline-block bg-clip-text text-transparent h-[4rem]`}
 					>
 						{DYNAMIC_CONTENT_MAPPING[count]?.subtTitle}
 					</div>
 					<div
 						className={`${
-							isVisible && "animate-slidein [--slidein-delay:700ms] opacity-0"
+							isVisible && "animate-slideup [--slidein-delay:300ms] opacity-0"
 						} opacity-0 text-lg w-2/3 text-wrap my-8 text-igrey tracking-wide font-plexlight`}
 					>
 						{DYNAMIC_CONTENT_MAPPING[count]?.description}

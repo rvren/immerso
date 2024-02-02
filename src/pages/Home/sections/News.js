@@ -25,7 +25,7 @@ export default function News() {
 				style={{ backgroundImage: `url(${CenterImage})` }}
 			></div>
 			<div className='absolute left-[18%] top-[18%] justify-items-center '>
-				<div className='text-4xl font-manropebold tracking-wide leading-[4rem]'>
+				<div className='text-5xl font-manropebold tracking-wide leading-[4rem]'>
 					<div
 						className={`${
 							isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
@@ -60,7 +60,7 @@ export default function News() {
 						<div
 							className={`${
 								isVisible && "animate-slidein [--slidein-delay:300ms] opacity-0"
-							} opacity-0 absolute top-[20rem] left-[28rem] text-4xl font-plexmedium`}
+							} opacity-0 absolute top-[21rem] left-[28rem] text-3xl font-plexmedium w-[40rem]`}
 						>
 							Immerso AI and Yotta announce strategic partnership for Generative
 							Media
@@ -75,7 +75,7 @@ export default function News() {
 						<img
 							src={ArrowImage}
 							alt='arrow_bg'
-							className='absolute top-[28rem] -right-[12rem] h-[4rem] '
+							className='absolute top-[27.5rem] -right-[12rem] h-[4rem] '
 						/>
 					</Typography>
 				</div>
